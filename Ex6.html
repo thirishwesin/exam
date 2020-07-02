@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Calculator</title>
+	<script>
+	function add(){
+		n1=parseInt(document.getElementById('n1').value);
+		n2=parseInt(document.getElementById('n2').value);
+		result=n1+n2;
+		alert (result);
+	}
+	function sub(){
+		n1=parseInt(document.getElementById('n1').value);
+		n2=parseInt(document.getElementById('n2').value);
+		result=n1-n2;
+		alert (result);
+	}
+	function mul(){
+		n1=parseInt(document.getElementById('n1').value);
+		n2=parseInt(document.getElementById('n2').value);
+		result=n1*n2;
+		alert (result);
+	}
+	function div(){
+		n1=parseInt(document.getElementById('n1').value);
+		n2=parseInt(document.getElementById('n2').value);
+		result=n1/n2;
+		alert (result);
+	}
+
+
+</script>
+</head>
+<body>
+
+<form>
+	First Number:<input type="text" name="n1" id="n1"><br>
+	Second Number:<input type="text" name="n2" id="n2"><br>
+	<input type="button" name="" value="+" onclick="add()">
+	<input type="button" name="" value="-" onclick="sub()">
+	<input type="button" name="" value="*" onclick="mul()">
+	<input type="button" name="" value="/" onclick="div()">
+</form>
+
+</body>
+</html>
